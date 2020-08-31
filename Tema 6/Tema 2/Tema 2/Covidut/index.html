@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <h1>COVID-19 App</h1>
+  </head>
+  <body>
+    <table id="myTable">
+      <tr>
+        <td>Nume si Prenume</td>
+        <td>Adresa</td>
+        <td>Oras</td>
+        <td>Judet</td>
+        <td>Varsta</td>
+        <td>Rezultat Testare</td>
+      </tr>
+    </table>
+    <br />
+
+    <button onclick="myCreateFunction()">Creare Intrare</button>
+    <button onclick="myDeleteFunction()">Stergere Intrare</button>
+
+    <script>
+      function myCreateFunction() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(1);
+        var cell4 = row.insertCell(1);
+        var cell5 = row.insertCell(1);
+        var cell6 = row.insertCell(1);
+        cell1.innerHTML = "NEW CELL1";
+        cell2.innerHTML = "NEW CELL2";
+        cell3.innerHTML = "NEW CELL3";
+        cell4.innerHTML = "NEW CELL4";
+        cell5.innerHTML = "NEW CELL5";
+        cell6.innerHTML = "NEW CELL6";
+      }
+
+      function myDeleteFunction() {
+        document.getElementById("myTable").deleteRow(1);
+      }
+    </script>
+  </body>
+
+  <h2>Bottom Modal</h2>
+
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</html>

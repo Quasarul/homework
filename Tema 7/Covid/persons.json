@@ -1,0 +1,49 @@
+{
+  "persoane": [
+    {
+      "id": 1,
+      "nume_prenume": "Popescu Ion",
+      "adresa": "str. Decebal, nr.10",
+      "oras": "Craiova",
+      "judet": "Dolj",
+      "varsta": 45,
+      "resultat_testare": "pozitiv"
+    },
+    {
+      "id": 2,
+      "nume_prenume": "Neasca Cosmin",
+      "adresa": "str. Decebal, nr.10",
+      "oras": "Tmisoara",
+      "judet": "Timis",
+      "varsta": 30,
+      "resultat_testare": "negativ"
+    },
+    {
+      "id": 3,
+      "nume_prenume": "Tomescu Lucian",
+      "adresa": "str. Decebal, nr.10",
+      "oras": "Iasi",
+      "judet": "Iasi",
+      "varsta": 25,
+      "resultat_testare": "pozitiv"
+    },
+    {
+      "id": 4,
+      "nume_prenume": "Tomescu Lucian",
+      "adresa": "str. Decebal, nr.10",
+      "oras": "Iasi",
+      "judet": "Iasi",
+      "varsta": 25,
+      "resultat_testare": "negativ"
+    },
+    {
+      "id": 5,
+      "nume_prenume": "Tomescu Lucian",
+      "adresa": "str. Decebal, nr.10",
+      "oras": "Iasi",
+      "judet": "Iasi",
+      "varsta": 25,
+      "resultat_testare": "pozitiv"
+    }
+  ]
+}

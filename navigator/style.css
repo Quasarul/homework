@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: calibri;
+  line-height: 1.8em;
+}
+
+.header {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  border-top: 3px solid #29ca8e;
+  /*background:#f0f0f0;*/
+  border-bottom: 3px solid #eee;
+}
+
+.header .logo {
+  flex: 0.3;
+  align-items: flex-start;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.header .logo a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header .logo a img {
+  width: 50px;
+}
+
+.header .menu ul {
+  flex: 4;
+  align-items: flex-start;
+}
+
+.header .menu ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.header .menu ul li.active a {
+  background: #29ca8e;
+  color: #fff;
+}
+
+.header .menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 20px;
+  color: #333;
+}
+
+.header .menu ul li a:hover {
+  color: red;
+}
+
+.header .phone-number-wrapper {
+  display: flex;
+  flex: 0.3;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: auto;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+span.icon,
+span.icon-phone i.fa,
+i.fa-phone {
+  color: #29ca8e;
+  cursor: pointer;
+}

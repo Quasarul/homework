@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <h1>COVID-19 App</h1>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nume si prenume</th>
+          <th>Adresa</th>
+          <th>Oras</th>
+          <th>Judet</th>
+          <th>Varsta</th>
+          <th>Rezultat testare</th>
+        </tr>
+      </thead>
+      <!-- JS Magic Here! -->
+      <tbody></tbody>
+    </table>
+    <br /><br />
+    <h3>Adauga persoana</h3>
+    <form action="">
+      <div>
+        <label for="nume_pren">Nume si Prenume:</label>
+        <input type="text" name="nume_pren" id="nume_pren" />
+      </div>
+      <div>
+        <label for="adresa">Adresa:</label>
+        <input type="text" name="adresa" id="adresa" />
+      </div>
+      <div>
+        <label for="oras">Oras:</label>
+        <input type="text" name="oras" id="oras" />
+      </div>
+      <div>
+        <label for="judet">Judet:</label>
+        <input type="text" name="judet" id="judet" />
+      </div>
+      <div>
+        <label for="varsta">Varsta:</label>
+        <input type="text" name="varsta" id="varsta" />
+      </div>
+      <div>
+        <label for="rez_test">Rezultat testare:</label>
+        <input type="text" name="rez_test" id="rez_test" />
+      </div>
+      <div>
+        <input type="hidden" name="id_nr" id="id_nr" value="5" />
+      </div>
+      <div>
+        <button type="button">Adauga</button>
+      </div>
+    </form>
+    <br /><br />
+    <h2>Statistici</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Afiseaza Statistici</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Statistici aplicatie</h2>
+        </div>
+        <div class="modal-body">
+          <div>
+            <select name="variante" id="variante">
+              <option value="Alegeti optiunea">Alegeti optiunea</option>
+              <option value="varsta medie a tuturor persoanelor testate"
+                >Varsta medie a tuturor persoanelor testate</option
+              >
+              <option value="varsta medie a persoanelor testate pozitiv"
+                >Varsta medie a persoanelor testate pozitiv</option
+              >
+              <option value="numele judetului cu cele mai multe cazuri pozitive"
+                >Numele judetului cu cele mai multe cazuri pozitive</option
+              >
+              <option value="numele judetului cu cele mai multe cazuri negative"
+                >Numele judetului cu cele mai multe cazuri negative</option
+              >
+              <option
+                value="numele judetului cu cele mai putine cazuri pozitive"
+                >Numele judetului cu cele mai putine cazuri pozitive</option
+              >
+              <option
+                value="numele judetului cu cele mai putine cazuri negative"
+                >Numele judetului cu cele mai putine cazuri negative</option
+              >
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <h3 id="result">Rezultat:</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="app2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Credit App</h1>
+      </div>
+      <form method="post">
+        <div>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="initialCredit">Initial Credit:</label><br />
+          <input type="text" id="initialCredit" />
+        </div>
+        <div>
+          <label for="yearsNumber">Number of years:</label><br />
+          <input type="text" id="yearsNumber" />
+        </div>
+        <div>
+          <label for="currency">Currency:</label><br />
+          <select name="currency" id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+        <div>
+          <br />
+        </div>
+      </form>
+      <button type="button">Calculate:</button>
+      <div id="result">Result here</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

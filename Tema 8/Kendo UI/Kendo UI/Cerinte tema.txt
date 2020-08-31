@@ -1,0 +1,13 @@
+Pagina se doreste a centraliza cateva view-uri care contin widget-uri legate de managementul unei companii mid-level, astfel:
+View 1 = Employees - va contine un grid Kendo cu urmatoarele coloane - First name, Last name, Employment date, Department, Gross salary, Last salary raise date.  Datele se vor incarca dintr-un fisier JSON local.
+View 2=  Products - va contine un Kendo ListView cu produsele companiei (minim 10 produse, va puteti alege voi tipul de produs: pizza, haine, carti, incaltaminte, accesorii sportive, plafar, etc). Fiecare produs va avea urmatoarele elemente: Denumire, poza,  pretul curent, ratingul curent (kendo rating). Gridul va avea o inaltime fixa de 400px. (Optional). Atunci cand se va selecta oricare dintre produse, sub grid se va afisa un kendo chart (bar or line) care va prezenta evolutia pretului produsului in ultimele 3 luni (simulare cu date random -> hint: puteti folosi Math.random() pentru a genera preturi aleator)
+View 3 = Orders - va contine un grid Kendo cu urmatoarele coloane: Order date, Order number, Product name, Quantity, Unit Price, Total without VAT, VAT(19%), Total. Datele se vor citi dintr-un fisier JSON local.
+Optional + Bonus: Se vor afisa comenzile grupate dupa Order number. Un Order number poate contine mai multe produse. Se va afis totalul partial per order si totalul general.
+Home view - puteti pune pe prima pagina orice si oricate widget-uri pe care vreti sa le vedeti cum functioneaza, din kendo.
+View-urile vor fi construite dinamic in interiorul tag-ului <main>. De fiecare data cand selectati un view nou din meniul de navigare din partea dreapta, tot ce aveti in <main> va trebuie sters ( i.e $('main').empty() ) si re-construit noul view selectat.
+Ca exemplu de functionare: https://www.akveo.com/blur-admin-mint/#/dashboard Nu incercati sa copiati cod din exemplul asta, doar sa va inspirati ca model de layout si model de navigare.
+P.S va trebui sa aveti in proiect o singura pagina index.html. Restul continutului se va construi prin alterarea DOM-ului
+Astept intrebari.
+akveo.com
+Blur Admin
+Free angular bootstrap admin dashboard template. World first blur panel dashboard.

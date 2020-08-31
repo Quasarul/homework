@@ -1,0 +1,320 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  /** font-family: 'Lato', sans-serif; */
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.aside-container {
+  position: relative;
+}
+
+.side-menu--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-container svg {
+  background-color: rgb(113, 201, 248);
+  fill: rgb(29, 161, 242);
+  width: 160%;
+  margin-top: -25%;
+  margin-left: -5%;
+}
+.container {
+  display: flex;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.inner-container {
+  height: 100%;
+  flex: auto;
+  width: 50%;
+  overflow: hidden;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.highlight svg {
+  fill: #fff;
+}
+
+.highlight p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 10px; */
+  margin: 10px;
+  width: 220px;
+  border-bottom: 2px solid #666;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+}
+
+.submit {
+  padding: 10px;
+  width: 75px;
+  border: 1px solid rgb(29, 161, 242);
+  background-color: #fff;
+  color: rgb(29, 161, 242);
+  border-radius: 50px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background: lightcyan;
+}
+
+.login-form {
+  display: flex;
+  margin-top: -10px;
+}
+
+.form-control input#password,
+.form-control input#credentials {
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 2px 10px;
+  line-height: 32px;
+  vertical-align: bottom;
+  background-color: #f5f8fa;
+}
+
+.form-control label {
+  padding: 5px 10px 0 10px;
+  color: #999;
+}
+
+.form-control.active label {
+  color: rgb(29, 161, 242);
+}
+
+.form-control.active {
+  border-bottom: 2px solid rgb(29, 161, 242);
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 30px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.password-link a {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: -295px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.password-link a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 19% auto;
+  width: 420px;
+}
+
+.main-content div.twitter-logo img {
+  width: 55px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.main-content h1 {
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.main-content p {
+  text-align: left;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-content .favorite {
+  margin-bottom: 15px;
+  background: #fff;
+  color: #1da1f2;
+  padding: 3%;
+  border: 1px solid #1da1f2;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.main-content .active {
+  background: #1da1f2;
+  color: #fff;
+  border: 1px solid #1da1f2;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+p.tweets {
+  padding-left: 10px;
+}
+
+.second-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.second-footer ul {
+  list-style: none;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.second-footer ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.second-footer ul li a {
+  text-decoration: none;
+  color: gray;
+}
